@@ -51,7 +51,7 @@ df = df.drop_duplicates(subset=['Datetime'], keep='last')
 df.to_csv('data.csv', index=False)
 
 # Model our data
-fig, ax = plt.subplots(figsize=(14, 7))
+fig, ax = plt.subplots(figsize=(12, 7))
 ax.plot(df['Datetime'], df['TSLA P&L'], label='TSLA Short')
 ax.plot(df['Datetime'], df['VT P&L'], label='VT Long')
 ax.plot(df['Datetime'], df['Total P&L'], label='Total')
