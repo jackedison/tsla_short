@@ -74,5 +74,5 @@ xmin = df[df['Total P&L']==ymin]['Datetime']
 ax.annotate(f'${ymax:.0f}', xy=(xmax, ymax), xytext=(xmax, ymax))
 ax.annotate(f'${ymin:.0f}', xy=(xmin, ymin), xytext=(xmin, ymin-10))
 
-plt.show()
+plt.savefig('the_great_short.png')
 
